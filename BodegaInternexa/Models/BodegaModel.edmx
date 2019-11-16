@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ModegaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="obtenerBodegaSolps" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idservicio" Type="varchar" Mode="In" />
+          <Parameter Name="cliente" Type="varchar" Mode="In" />
+          <Parameter Name="nombreservicio" Type="varchar" Mode="In" />
+          <Parameter Name="os" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="ValidacionBodegaSolps" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idservicio" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="ModegaModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ModegaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="INTERNEXAEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="obtenerBodegaSolps" ReturnType="Collection(ModegaModel.obtenerBodegaSolps_Result)">
+            <Parameter Name="idservicio" Mode="In" Type="String" />
+            <Parameter Name="cliente" Mode="In" Type="String" />
+            <Parameter Name="nombreservicio" Mode="In" Type="String" />
+            <Parameter Name="os" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="ValidacionBodegaSolps" ReturnType="Collection(ModegaModel.ValidacionBodegaSolps_Result)">
+            <Parameter Name="idservicio" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="obtenerBodegaSolps_Result">
+          <Property Type="String" Name="Cliente" Nullable="true" MaxLength="400" />
+          <Property Type="String" Name="OS" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="IdServicio" Nullable="true" MaxLength="400" />
+          <Property Type="String" Name="Nombre_Servicio" Nullable="true" MaxLength="400" />
+          <Property Type="String" Name="Orden_SAP" Nullable="true" MaxLength="400" />
+        </ComplexType>
+        <ComplexType Name="ValidacionBodegaSolps_Result">
+          <Property Type="String" Name="IdServicio" Nullable="true" MaxLength="400" />
+          <Property Type="String" Name="Estado" Nullable="true" MaxLength="400" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModegaModelStoreContainer" CdmEntityContainer="INTERNEXAEntities" >
+          <FunctionImportMapping FunctionImportName="obtenerBodegaSolps" FunctionName="ModegaModel.Store.obtenerBodegaSolps">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ModegaModel.obtenerBodegaSolps_Result">
+                <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+                <ScalarProperty Name="OS" ColumnName="OS" />
+                <ScalarProperty Name="IdServicio" ColumnName="IdServicio" />
+                <ScalarProperty Name="Nombre_Servicio" ColumnName="Nombre_Servicio" />
+                <ScalarProperty Name="Orden_SAP" ColumnName="Orden_SAP" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ValidacionBodegaSolps" FunctionName="ModegaModel.Store.ValidacionBodegaSolps">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ModegaModel.ValidacionBodegaSolps_Result">
+                <ScalarProperty Name="IdServicio" ColumnName="IdServicio" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
