@@ -12,7 +12,7 @@ using System.Web.Http.Cors;
 namespace BodegaInternexa.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    public class BodegaXmlController : ApiController
+    public class BodegaProdController : ApiController
     {
         INTERNEXAEntitiesCopia db = new INTERNEXAEntitiesCopia();
 

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModegaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="INTERNEXAEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="obtenerBodegaSolps" ReturnType="Collection(ModegaModel.obtenerBodegaSolps_Result)">
+      <Parameter Name="idservicio" Mode="In" Type="String" />
+      <Parameter Name="cliente" Mode="In" Type="String" />
+      <Parameter Name="nombreservicio" Mode="In" Type="String" />
+      <Parameter Name="os" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ValidacionBodegaSolps" ReturnType="Collection(ModegaModel.ValidacionBodegaSolps_Result)">
+      <Parameter Name="idservicio" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="obtenerBodegaSolps_Result">
+    <Property Type="String" Name="Cliente" Nullable="true" MaxLength="400" />
+    <Property Type="String" Name="OS" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="IdServicio" Nullable="true" MaxLength="400" />
+    <Property Type="String" Name="Nombre_Servicio" Nullable="true" MaxLength="400" />
+    <Property Type="String" Name="Orden_SAP" Nullable="true" MaxLength="400" />
+  </ComplexType>
+  <ComplexType Name="ValidacionBodegaSolps_Result">
+    <Property Type="String" Name="IdServicio" Nullable="true" MaxLength="400" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="400" />
+  </ComplexType>
+</Schema>

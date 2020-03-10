@@ -175,6 +175,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\Bodega2Controller.cs" />
+    <Compile Include="Controllers\Bodega1Controller.cs" />
+    <Compile Include="Controllers\BodegaProdController.cs" />
     <Compile Include="Controllers\TokenController.cs" />
     <Compile Include="Controllers\ValidarBodegaController.cs" />
     <Compile Include="Controllers\BodegaXmlController.cs" />
@@ -182,6 +185,21 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BodegaModel - Copia.Context.cs">
+      <DependentUpon>BodegaModel - Copia.Context.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\BodegaModel - Copia.cs">
+      <DependentUpon>BodegaModel - Copia.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\BodegaModel - Copia.Designer.cs">
+      <DependentUpon>BodegaModel - Copia.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Models\BodegaModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -198,8 +216,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BodegaModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\obtenerBodegaSolps_Result.cs" />
-    <Compile Include="Models\ValidacionBodegaSolps_Result.cs" />
+    <Compile Include="Models\obtenerBodegaSolps_Result.cs">
+      <DependentUpon>BodegaModel - Copia.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ValidacionBodegaSolps_Result.cs">
+      <DependentUpon>BodegaModel - Copia.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +233,16 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Models\BodegaModel - Copia.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BodegaModel - Copia.edmx</DependentUpon>
+      <LastGenOutput>BodegaModel - Copia.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BodegaModel - Copia.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BodegaModel - Copia.edmx</DependentUpon>
+      <LastGenOutput>BodegaModel - Copia.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\BodegaModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BodegaModel.edmx</DependentUpon>
@@ -248,6 +280,13 @@
     </EntityDeploy>
     <Content Include="Models\BodegaModel.edmx.diagram">
       <DependentUpon>BodegaModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\BodegaModel - Copia.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BodegaModel - Copia.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\BodegaModel - Copia.edmx.diagram">
+      <DependentUpon>BodegaModel - Copia.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\SolpBodegaInternexa - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />

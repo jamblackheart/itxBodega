@@ -97,3 +97,4 @@ D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\es\System.Web.WebPages.R
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\obj\Release\BodegaInternexa.csproj.CopyComplete
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\obj\Release\BodegaInternexa.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\obj\Release\BodegaInternexa.pdb
+D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\obj\Release\BodegaInternexa.csprojAssemblyReference.cache

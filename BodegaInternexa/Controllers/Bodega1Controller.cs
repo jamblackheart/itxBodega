@@ -12,9 +12,11 @@ using System.Web.Http.Cors;
 namespace BodegaInternexa.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    public class BodegaXmlController : ApiController
+    public class Bodega1Controller : ApiController
     {
-        INTERNEXAEntitiesCopia db = new INTERNEXAEntitiesCopia();
+
+        INTERNEXAEntities db = new INTERNEXAEntities();
+        
 
         public HttpResponseMessage Get(string idservicio = null,
                                             string cliente = null,
@@ -32,14 +34,14 @@ namespace BodegaInternexa.Controllers
 
                 result = db.obtenerBodegaSolps(idservicio, cliente, nombreservicio, os).ToList();
                 json = JsonConvert.SerializeObject(result);
-
+                
                 response = this.Request.CreateResponse(HttpStatusCode.OK);
 
-
+           
             }
             catch (Exception ex)
             {
-                response = this.Request.CreateResponse(HttpStatusCode.BadRequest + "Ex: " + ex.Message);
+                response = this.Request.CreateResponse(HttpStatusCode.BadRequest + "Ex: " +ex.Message);
             }
 
             //string json = JsonConvert.SerializeObject(result);
@@ -48,6 +50,9 @@ namespace BodegaInternexa.Controllers
             return response;
 
         }
+
+
+       
 
     }
 }

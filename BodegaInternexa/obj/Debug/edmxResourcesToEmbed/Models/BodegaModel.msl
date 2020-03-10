@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModegaModelStoreContainer" CdmEntityContainer="INTERNEXAEntities">
+    <FunctionImportMapping FunctionImportName="obtenerBodegaSolps" FunctionName="ModegaModel.Store.obtenerBodegaSolps">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ModegaModel.obtenerBodegaSolps_Result">
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="OS" ColumnName="OS" />
+          <ScalarProperty Name="IdServicio" ColumnName="IdServicio" />
+          <ScalarProperty Name="Nombre_Servicio" ColumnName="Nombre_Servicio" />
+          <ScalarProperty Name="Orden_SAP" ColumnName="Orden_SAP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ValidacionBodegaSolps" FunctionName="ModegaModel.Store.ValidacionBodegaSolps">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ModegaModel.ValidacionBodegaSolps_Result">
+          <ScalarProperty Name="IdServicio" ColumnName="IdServicio" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
