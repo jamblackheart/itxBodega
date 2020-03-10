@@ -15,18 +15,39 @@ namespace BodegaInternexa.Controllers
     public class BodegaXmlController : ApiController
     {
         INTERNEXAEntities db = new INTERNEXAEntities();
-        // GET api/<controller>
-        public IEnumerable<obtenerBodegaSolps_Result> Get(string idservicio = null,
+
+        public HttpResponseMessage Get(string idservicio = null,
                                             string cliente = null,
                                             string nombreservicio = null,
                                             string os = null)
         {
-            var result = db.obtenerBodegaSolps(idservicio, cliente, nombreservicio, os);
-            return result;
+            HttpResponseMessage response = null;
+
+
+
+            List<obtenerBodegaSolps_Result> result;
+            string json = string.Empty;
+            try
+            {
+
+                result = db.obtenerBodegaSolps(idservicio, cliente, nombreservicio, os).ToList();
+                json = JsonConvert.SerializeObject(result);
+
+                response = this.Request.CreateResponse(HttpStatusCode.OK);
+
+
+            }
+            catch (Exception ex)
+            {
+                response = this.Request.CreateResponse(HttpStatusCode.BadRequest + "Ex: " + ex.Message);
+            }
+
+            //string json = JsonConvert.SerializeObject(result);
+
+            response.Content = new StringContent(json, Encoding.UTF8, "application/json");
+            return response;
+
         }
-
-
-       
 
     }
 }

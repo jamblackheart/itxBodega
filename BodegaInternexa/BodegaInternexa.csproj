@@ -175,6 +175,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\TokenController.cs" />
     <Compile Include="Controllers\ValidarBodegaController.cs" />
     <Compile Include="Controllers\BodegaXmlController.cs" />
     <Compile Include="Controllers\BodegaController.cs" />
@@ -197,12 +198,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BodegaModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\obtenerBodegaSolps_Result.cs">
-      <DependentUpon>BodegaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ValidacionBodegaSolps_Result.cs">
-      <DependentUpon>BodegaModel.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\obtenerBodegaSolps_Result.cs" />
+    <Compile Include="Models\ValidacionBodegaSolps_Result.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -16,7 +16,8 @@ namespace BodegaInternexa.Controllers
     {
 
         INTERNEXAEntities db = new INTERNEXAEntities();
-                           
+        
+
         public HttpResponseMessage Get(string idservicio = null,
                                             string cliente = null,
                                             string nombreservicio = null,
@@ -49,6 +50,9 @@ namespace BodegaInternexa.Controllers
             return response;
 
         }
+
+
+       
 
     }
 }

@@ -55,7 +55,9 @@ D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\Microsoft.Web.Infrastruc
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\Newtonsoft.Json.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\Swashbuckle.Core.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Net.Http.Formatting.dll
+D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Cors.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Helpers.dll
+D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Http.Cors.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Http.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Http.WebHost.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Mvc.dll
@@ -70,8 +72,9 @@ D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\EntityFramework.xml
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\EntityFramework.SqlServer.xml
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\Newtonsoft.Json.xml
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Net.Http.Formatting.xml
-D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Helpers.xml
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Http.xml
+D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Http.Cors.xml
+D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Helpers.xml
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Http.WebHost.xml
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Mvc.xml
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Optimization.xml
@@ -82,8 +85,8 @@ D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.WebPages.Razo
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\Antlr3.Runtime.pdb
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\es\System.Net.Http.Formatting.resources.dll
-D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\es\System.Web.Helpers.resources.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\es\System.Web.Http.resources.dll
+D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\es\System.Web.Helpers.resources.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\es\System.Web.Http.WebHost.resources.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\es\System.Web.Mvc.resources.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\es\System.Web.Optimization.resources.dll
@@ -91,11 +94,6 @@ D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\es\System.Web.Razor.reso
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\es\System.Web.WebPages.resources.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\es\System.Web.WebPages.Deployment.resources.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\es\System.Web.WebPages.Razor.resources.dll
-D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\obj\Release\BodegaInternexa.csprojAssemblyReference.cache
-D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\obj\Release\BodegaInternexa.csproj.CoreCompileInputs.cache
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\obj\Release\BodegaInternexa.csproj.CopyComplete
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\obj\Release\BodegaInternexa.dll
 D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\obj\Release\BodegaInternexa.pdb
-D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Cors.dll
-D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Http.Cors.dll
-D:\Enovel\Proyectos\BodegaInternexa\BodegaInternexa\bin\System.Web.Http.Cors.xml
